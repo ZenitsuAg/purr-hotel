@@ -9,7 +9,8 @@
 <body class="relative antialiased scroll-smooth">
   <nav class="fixed z-10 flex items-center justify-around w-full text-white bg-gradient-to-r from-fuchsia-700/80 to-teal-500/80 backdrop-blur-sm">
     <h1 class="text-7xl font-qwigley">Purr Hotels</h1>
-    <ul class="flex font-mochiy">
+    <div class="text-5xl cursor-pointer md:hidden">&equiv;</div>
+    <ul class="hidden md:flex font-mochiy">
       <li class="p-3 hover:bg-indigo-600">Home</li>
       <li class="p-3 hover:bg-indigo-600">About</li>
       <li class="p-3 hover:bg-indigo-600">Contact us</li>
@@ -17,9 +18,8 @@
   </nav>
   <main>
     <section class="flex items-center justify-center h-screen text-white bg-no-repeat bg-cover font-josefin bg-slate-700/70 bg-scenery bg-blend-overlay">
-      <div>
-        
-        <h1 class="text-5xl">Welcome to Purr Hotels.</h1>
+      <div>  
+        <h1 class="text-5xl text-center">Welcome to Purr Hotels.</h1>
         <p class="text-4xl italic text-center font-qwigley">Europe's premier destination for comfort</p>
       </div>
     </section>
@@ -29,21 +29,21 @@
           <h1
           class="text-6xl text-center underline decoration-double decoration-teal-500 font-qwigley">
           About Us</h1>
-          <p class="text-2xl text-justify font-josefin first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-teal-700 first-letter:mr-3 first-letter:float-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi blanditiis rerum voluptate nesciunt eveniet repudiandae modi dicta deserunt velit, ratione dolore ex doloremque asperiores possimus, eligendi incidunt magnam laudantium porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti minus facere, et eaque odit provident dignissimos deleniti quod aliquam repellat illo inventore sunt nobis distinctio sapiente, quasi, reiciendis nulla? Minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis id provident voluptatem nam. Doloremque dolores hic tenetur eius. Laboriosam tempora vel ad fuga, accusantium doloribus illum tempore officia quam quisquam.</p>
+          <p class="text-2xl text-justify font-josefin first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-teal-700 first-letter:mr-3 first-letter:float-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi blanditiis rerum voluptate nesciunt eveniet repudiandae modi dicta deserunt velit, ratione dolore ex doloremque asperiores possimus, eligendi incidunt magnam laudantium porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="underline decoration-solid decoration-fuchsia-600 decoration-4">Corrupti</span> minus facere, et eaque odit provident dignissimos deleniti quod aliquam repellat illo inventore sunt nobis distinctio sapiente, quasi, reiciendis nulla? Minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis id provident voluptatem nam. Doloremque dolores hic tenetur eius. Laboriosam tempora vel ad fuga, accusantium doloribus illum tempore officia quam quisquam.</p>
         </div>
                         <!-- Premium Locations -->
         <p class="text-6xl text-center underline font-qwigley decoration-double decoration-teal-500">Shop our premium locations:</p>
           <div class="flex flex-row flex-wrap items-center justify-center w-full gap-4 p-5">
-            <div class="w-1/2 p-5 rounded-lg shadow-xl hover:shadow-teal-100 hover:scale-105 hover:shadow-2xl h-72">
-              <div class="h-full bg-teal-700 bg-cover rounded-lg bg-premium "></div>
+            <div class="w-full p-5 rounded-lg shadow-xl md:w-1/2 hover:shadow-teal-100 hover:scale-105 hover:shadow-2xl h-72">
+              <div class="h-full bg-teal-700 bg-cover rounded-lg bg-premium"></div>
             </div>
-            <div class="w-1/3 p-5 rounded-lg shadow-xl hover:shadow-teal-100 hover:scale-105 hover:shadow-2xl h-72">
-              <div class="h-full bg-teal-700 bg-cover rounded-lg bg-relaxing "></div>
+            <div class="w-full p-5 rounded-lg shadow-xl md:w-1/3 hover:shadow-teal-100 hover:scale-105 hover:shadow-2xl h-72">
+              <div class="h-full bg-teal-700 bg-cover rounded-lg bg-relaxing"></div>
             </div>
-            <div class="w-1/3 p-5 rounded-lg shadow-xl hover:shadow-teal-100 hover:scale-105 hover:shadow-2xl h-72">
-              <div class="h-full bg-teal-700 bg-cover rounded-lg bg-outside "></div>
+            <div class="w-full p-5 rounded-lg shadow-xl md:w-1/3 hover:shadow-teal-100 hover:scale-105 hover:shadow-2xl h-72">
+              <div class="h-full bg-teal-700 bg-cover rounded-lg bg-outside"></div>
             </div>
-            <div class="w-1/2 p-5 rounded-lg shadow-xl hover:shadow-teal-100 hover:scale-105 hover:shadow-2xl h-72">
+            <div class="w-full p-5 rounded-lg shadow-xl md:w-1/2 hover:shadow-teal-100 hover:scale-105 hover:shadow-2xl h-72">
               <div class="h-full bg-teal-700 bg-cover rounded-lg bg-luxury"></div>
             </div>
           </div>
@@ -51,7 +51,7 @@
     </section>
   </main>
   <footer>
-    <div class="flex flex-row items-center justify-around h-32 p-4 text-white font-josefin bg-gradient-to-br from-70% to-fuchsia-500 from-teal-700">
+    <div class="flex flex-col-reverse md:flex-row items-center justify-around h-32 p-4 text-white font-josefin bg-gradient-to-br from-60% to-fuchsia-500 from-teal-700">
       <div>© 2023 Purr Hotels. All rights reserved.</div>
       <div class="flex flex-row gap-5">
         <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
