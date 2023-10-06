@@ -6,10 +6,15 @@
   <link href="/dist/output.css" rel="stylesheet" />
   <title>Purr Hotels</title>
 </head>
-<body class="relative antialiased scroll-smooth">
-  <nav class="fixed z-10 flex items-center justify-around w-full text-white bg-gradient-to-r from-fuchsia-700/80 to-teal-500/80 backdrop-blur-sm">
+<body class="relative">
+  <nav class="fixed z-10 flex items-center justify-around w-full text-white shadow-xl bg-gradient-to-r from-fuchsia-700/80 to-teal-500/80 backdrop-blur-sm">
     <h1 class="text-7xl font-qwigley">Purr Hotels</h1>
-    <div class="text-5xl cursor-pointer md:hidden">&equiv;</div>
+    <div id="hamburger" class="text-5xl cursor-pointer md:hidden">&equiv;</div>
+    <ul id="mobile-menu" class="absolute right-0 w-full transition-all duration-300 ease-in-out transform divide-y bg-gradient-to-r sm:bg-gradient-to-b to-fuchsia-700/80 from-teal-500/80 sm:translate-x-96 sm:w-1/2 sm:h-screen backdrop-blur-sm top-[72px] md:hidden font-mochiy -translate-y-96 sm:translate-y-0 shadow-xl">
+      <a href="#home" class="block"><li class="pr-10 p-7 hover:bg-indigo-600">Home</li></a>
+      <a href="#about" class="block"><li class="pr-10 p-7 hover:bg-indigo-600">About</li></a>
+      <a href="#footer" class="block"><li class="pr-10 p-7 hover:bg-indigo-600">Contact us</li></a>
+    </ul>
     <ul class="hidden md:flex font-mochiy">
       <a href="#home"><li class="p-3 hover:bg-indigo-600">Home</li></a>  
       <a href="#about"><li class="p-3 hover:bg-indigo-600">About</li></a>  
@@ -17,7 +22,7 @@
     </ul>
   </nav>
   <main>
-    <section class="flex items-center justify-center h-screen text-white bg-no-repeat bg-cover font-josefin bg-slate-700/70 bg-scenery bg-blend-overlay">
+    <section id="home" class="flex items-center justify-center h-screen text-white bg-no-repeat bg-cover font-josefin bg-slate-700/70 bg-scenery bg-blend-overlay">
       <div>  
         <h1 class="text-5xl text-center">Welcome to Purr Hotels.</h1>
         <p class="text-4xl italic text-center font-qwigley">Europe's premier destination for comfort</p>
@@ -26,7 +31,7 @@
 
     <section id="about">
                           <!-- About Us -->
-        <div class="p-3">
+        <div class="p-3 pt-20">
           <h1
           class="text-6xl text-center underline decoration-double decoration-teal-500 font-qwigley">
           About Us</h1>
